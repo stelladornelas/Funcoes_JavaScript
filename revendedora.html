@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        /* 3 - Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais
+        uma comissão também fixa para cada carro vendido e | mais 5% do valor das vendas por ele efetuadas.|
+        Escrever um algoritmo que leia o número de carros por ele vendidos, | o valor total de suas vendas, o salário fixo
+        e o valor que ele recebe por carro vendido. | Calcule e escreva o salário final do vendedor.
+        */
+        
+        var carrosVendido = parseInt(prompt("Quantos carros vendidos: "))
+        var salario = parseFloat(prompt("Qual o salario fixo: "))
+        var comissao = parseFloat(prompt("Qual o valor da comissão: "))
+
+        function salarioRevendedor (a, b, c){
+          var totalVendas = (carrosVendido * comissao) + salario
+          var salarioBruto = totalVendas + (totalVendas * 0.05)
+          return salarioBruto
+        }
+        alert(salarioRevendedor(carrosVendido,salario,comissao))
+
+
+
+    </script>
+</body>
+</html>
